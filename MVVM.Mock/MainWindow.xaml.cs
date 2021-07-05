@@ -15,5 +15,4 @@ namespace MVVM.Mock
             this.DataContext = new MainWindowViewModel();
         }
     }
-    //Add some comment to test git
 }
