@@ -14,4 +14,5 @@ namespace MVVM.Mock
     public partial class App : Application
     {
     }
+    //Add some text here in App
 }
