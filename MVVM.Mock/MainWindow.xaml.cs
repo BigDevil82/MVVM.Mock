@@ -1,4 +1,5 @@
 ﻿using MVVM.Mock.ViewModels;
+using System;
 using System.Windows;
 
 
@@ -13,6 +14,14 @@ namespace MVVM.Mock
         {
             InitializeComponent();
             this.DataContext = new MainWindowViewModel();
+            Action action = new Action( Print);
+            action();
+        }
+
+        public void Print()
+        {
+            System.Console.WriteLine("asd");
+            Console.Read();
         }
     }
 }

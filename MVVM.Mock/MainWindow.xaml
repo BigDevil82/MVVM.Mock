@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <Style TargetType="TextBox">
-            <Setter Property="Height" Value="50"/>
+            <Setter Property="Height" Value="30"/>
         </Style>
     </Window.Resources>
     <StackPanel>
-        <TextBox Text="{Binding Input}"/>
-        <TextBox Text="{Binding Pattern}"/>
-        <TextBox Text="{Binding Input}"/>
-        <Button Content="Add" Height="50" Command="{Binding ExecuteAdd}"/>
+        <TextBox x:Name="tb1" Text="{Binding Input}"/>
+        <TextBox x:Name="tb2" Text="{Binding Pattern}"/>
+        <TextBox x:Name="tb3" Text="{Binding Result}"/>
+        <Button x:Name="Add" Content="Add" Height="50" Command="{Binding AddCommand}"/>
     </StackPanel>
 </Window>
